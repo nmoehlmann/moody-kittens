@@ -67,8 +67,8 @@ function drawKittens() {
       <div class="d-flex justify-content-center">Affection: ${kitten.affection}</div>
       
       <div>
-        <button type="button" onclick="pet('${kitten.id}')">Pet Kitten</button>
-        <button type="button" onclick="catnip('${kitten.id}')">Give Catnip</button>
+        <button class="fa-solid fa-hand" type="button" onclick="pet('${kitten.id}')">Pet Kitten</button>
+        <button class="fa-solid fa-jar-wheat" type="button" onclick="catnip('${kitten.id}')">Give Catnip</button>
       </div>
       </div>
     </div>

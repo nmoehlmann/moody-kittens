@@ -226,6 +226,10 @@ button.btn-special:hover{
   justify-content: space-evenly;
 }
 
+.d-flex.center{
+  justify-content: center;
+}
+
 .mt-1{
   margin-top: .5em;
 }
