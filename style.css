@@ -80,6 +80,7 @@ button{
   transition: all .2s ease;
   cursor: pointer;
   padding: .5em;
+  font-family: 'Raleway', sans-serif;
 }
 button:focus{
   outline: none;
@@ -121,6 +122,7 @@ button.btn-special:hover{
   padding: 1em;
   box-shadow: var(--shadow);
   border-radius: var(--corners);
+  font-family: 'Permanent Marker', cursive;
 }
 
 .shadow{
@@ -131,20 +133,45 @@ button.btn-special:hover{
 .kitten img{
   filter: drop-shadow(2px 4px 6px #1b1b1b);
   transition: all .35s ease;
+
 }
-.kitten.happy img{
+.kitten.Happy img{
   filter: drop-shadow(2px 4px 6px #00ffb3);
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url(http://www.clker.com/cliparts/O/v/E/U/x/e/black-cat-happy-hi.png) no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  padding-left: 200px;
 }
-.kitten.tolerant img{
+.kitten.Tolerant img{
   filter: drop-shadow(2px 4px 6px #646464);
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url(https://cdn.pixabay.com/photo/2013/07/12/19/22/cat-154641_960_720.png) no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  padding-left: 200px;
 }
-.kitten.angry img{
+.kitten.Angry img{
   filter: drop-shadow(2px 4px 6px #ff0000) contrast(1);
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url(https://cdn.pixabay.com/photo/2013/07/12/19/22/cat-154642_960_720.png) no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  padding-left: 200px;
 }
-.kitten.gone img{
+.kitten.Gone img{
   filter: drop-shadow(2px 4px 6px #ff0000) contrast(0);
 }
-.kitten.gone{
+.kitten.Gone{
   color: var(--danger);
   pointer-events: none;
 }
@@ -193,6 +220,10 @@ button.btn-special:hover{
 }
 .d-flex.justify-content-center{
   justify-content: center;
+}
+
+.d-flex.space-evenly{
+  justify-content: space-evenly;
 }
 
 .mt-1{

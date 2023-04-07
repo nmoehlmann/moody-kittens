@@ -7,8 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Moody Kittens | CodeWorks</title>
   <link rel="shortcut icon" href="moody-logo.png" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/6b1affbc75.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.pixabay.com/photo/2013/07/12/19/22/cat-154642_960_720.png">
+  <link rel="stylesheet" href="https://cdn.pixabay.com/photo/2013/07/12/19/22/cat-154641_960_720.png">
 </head>
 
 <body>
@@ -28,22 +32,27 @@
       <div class="card p-2 text-center w-50">
         <img src="moody-logo.png" height="250" alt="Moody Kittens">
         <div class="mt-2">
-          <b class="text-center">Hello Student</b>
-          <p>This is your starter template only feel free to modify the look as you tackle the challenges that we have laid out.</p>
+          <b class="text-center">Hello There</b>
+          <p>Name your cat and click 'Add' to get started.</p>
           <small>Good Luck and Have Fun!</small>
           <br>
           <button onclick="getStarted()">Get Started</button>
         </div>
       </div>
     </div>
-    <div class="p-2">
       <div id="kittens" class="d-flex align-items-center flex-wrap">
       </div>
+      <div id="deleted" class="d-flex align-items-center">
+      </div>
   </main>
-  <footer class="card bg-dark text-light p-2 d-flex align-items-center justify-content-center">
+  <footer class="card bg-dark text-light p-2 d-flex space-evenly">
     <small>Created with <span style="color: var(--primary)">&hearts;</span> by CodeWorks</small>
+    <div>
+      <i class="fa-solid fa-trash-can text-danger action d-flex flex-wrap" onclick="clearKittens()">
+        <span class="m-1">Leave Kittens</span>
+      </i>
+    </div>
   </footer>
-
   <script src="app.js"></script>
 </body>
 
