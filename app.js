@@ -27,7 +27,7 @@ function addKitten(event) {
     let kittenListNames = kittens[i].name;
     let kittenName = form.name.value;
     if (kittenName == kittenListNames) {
-      window.alert("deez")
+      window.alert("This kitten already exists!")
       return
     }
   }
