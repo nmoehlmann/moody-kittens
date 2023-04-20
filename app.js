@@ -15,11 +15,21 @@ function addKitten(event) {
   event.preventDefault()
   let form = event.target
 
+
   let kitten = {
     id: generateId(),
     name: form.name.value,
     affection: 5,
     mood: "Tolerant"
+  }
+
+  for (let i = 0; i < kittens.length; i++) {
+    let kittenListNames = kittens[i].name;
+    let kittenName = form.name.value;
+    if (kittenName == kittenListNames) {
+      window.alert("deez")
+      return
+    }
   }
   kittens.push(kitten)
   saveKittens()
@@ -84,7 +94,7 @@ function drawKittens() {
  * @return {Kitten}
  */
 function findKittenById(id) {
-  return kittens.find(k => k.id == id);
+  return kittens.find(kitten => kitten.id == id);
 }
 
 
@@ -100,11 +110,11 @@ function pet(id) {
   let currentKitten = findKittenById(id)
   let randomNumber = Math.random()
   if (randomNumber > .5) {
-    currentKitten.affection ++;
+    currentKitten.affection++;
     setKittenMood(currentKitten)
-    saveKittens() 
+    saveKittens()
   } else {
-    currentKitten.affection --;
+    currentKitten.affection--;
     setKittenMood(currentKitten)
     saveKittens()
   }
@@ -147,10 +157,10 @@ function setKittenMood(kitten) {
  * Removes all of the kittens from the array
  * remember to save this change
  */
-function clearKittens(){
+function clearKittens() {
   kittens.length = 0
   saveKittens()
-  }
+}
 
 /**
  * Removes the welcome content and should probably draw the 
