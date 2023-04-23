@@ -15,7 +15,6 @@ function addKitten(event) {
   event.preventDefault()
   let form = event.target
 
-
   let kitten = {
     id: generateId(),
     name: form.name.value,
@@ -31,6 +30,12 @@ function addKitten(event) {
       return
     }
   }
+
+  if (kitten.name == "") {
+    window.alert("name your kitten!")
+    return
+  }
+
   kittens.push(kitten)
   saveKittens()
   form.reset()
